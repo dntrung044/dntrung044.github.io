@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đào Nhật Trung - Curriculum Vitae</title>
+  <link rel="icon" href="assets/logo.ico">
+  <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/custome-ver2.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <button class="portfolio-back disabled-btn" id="portfolio-back-button" title="Click here to go back">
+    <ion-icon name="arrow-up" title="Click here to go back"></ion-icon>
+  </button>
+
+  <main>
+    <!------------------------------------------------ #SIDEBAR ------------------------------------------------>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="assets/images/avatar.png" alt="Đào Nhật Trung" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="realname" title="Đào Nhật Trung">Đào Nhật Trung</h1>
+          <!-- <h1 class="name" title="name">name</h1> -->
+
+          <p class="title">Back-end Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:dntrung044@gmail.com" class="contact-link">dntrung044@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+84375307021" class="contact-link">+84 375 307 021</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2000-06-18">April 4, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Da Nang City</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/dntrung044" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.behance.net/dntrung044" class="social-link">
+              <ion-icon name="logo-behance"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/dntrung044" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@dntrung044" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <button class="old-version" id="old-version-button" title="Click here to view old version">
+          <ion-icon name="trending-down" title="Click here to view old version"></ion-icon>
+          <span>Download CV</span>
+        </button>
+      </div>
+    </aside>
+    <!-- #main-content -->
+
+    <div class="main-content">
+      <!------------------------------------------------ #NAVBAR ------------------------------------------------>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!------------------------------------------------ #ABOUT ------------------------------------------------>
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello, my name is Trung. I am a final-year student currently working as a backend development intern. I have
+            experience in web development, proficient in technologies such as PHP, Laravel, and SQL, with a strong
+            ability to optimize application performance.
+          </p>
+          <p>
+            Besides programming, I am deeply passionate about user interface (UI/UX) design, with expertise in tools
+            like Figma, Photoshop, and Illustrator.
+          </p>
+          I am seeking opportunities to advance my web development career while expanding my knowledge in UI/UX design.
+          I aim to combine the logical thinking of programming with the creativity of design to deliver well-rounded
+          products optimized for both functionality and user experience.
+          </p>
+        </section>
+        <!--service-->
+        <header>
+          <h2 class="h2 article-title">What i'm doing</h2>
+        </header>
+        <section class="service">
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="" alt="Backend Developer" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title unity-tag">Backend Developer</h4>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="" alt="UI Designer" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title unreal-tag">UI Designer</h4>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="" alt="Graphic Designer" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title application-tag">Graphic Designer</h4>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <header>
+          <h2 class="h2 article-title">Main Skill</h2>
+        </header>
+        <section class="main-skills">
+          <div class="skills-categories">
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Programming Languages</h4>
+              <ul class="skills-list">
+                <li class="skills-item">PHP</li>
+                <li class="skills-item">JavaScript</li>
+                <li class="skills-item">CSS</li>
+                <li class="skills-item">SQL</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Design Tools</h4>
+              <ul class="skills-list">
+                <li class="skills-item">Photoshop</li>
+                <li class="skills-item">Figma</li>
+                <li class="skills-item">After effect</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Programming Tools</h4>
+              <ul class="skills-list">
+                <li class="skills-item" title="Object Oriented Programming">GIT</li>
+                <li class="skills-item">Postman</li>
+                <li class="skills-item" title="Test Driven Development">Docker</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="skills-box-separator"></div>
+          <button class="skills-button" id="skills-button">
+            <ion-icon name="open"></ion-icon>
+            <span>Explore Resume</span>
+          </button>
+        </section>
+
+        <div class="modal-container disabled" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </section>
+        </div>
+      </article>
+      <!------------------------------------------------ #END ABOUT ------------------------------------------------>
+
+      <!------------------------------------------------ #RESUME ------------------------------------------------>
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <a href="https://di4l.vn/">
+                <h3 class="h3 timeline-item-title">Di4L </h3>
+              </a>
+              <h4 class="h4 timeline-item-position"><span> Backend Developer</span> </h4>
+              <span style="font-size: small; margin-bottom: 1em;">August/2024 — October/2024</span>
+
+              <ul class="timeline-text">
+                <li class="timeline-description">
+                  <b>Technologies used:</b> <span>Laravel, AlpineJS with Livewire.</span>
+                </li>
+                <li class="timeline-description">
+                  <b>Tools:</b> <span>Git, Postman, Docker.</span>
+                </li>
+                <li class="timeline-description">
+                  <b>Job Description:</b>
+                </li>
+              </ul>
+              <span style="margin-left: 1em;">- Developed backend CMS and API for a taxi booking application.</span>
+              <span style="margin-left: 1em;">- Created sessions and templates for an e-commerce website.</span>
+              <span style="margin-left: 1em;">- Fixed issues in the admin panel for a booking application.</span>
+            </li>
+
+            <li class="timeline-item">
+              <a href="https://sbay.com.vn">
+                <h3 class="h3 timeline-item-title"> Hotel Company </h3>
+              </a>
+              <h4 class="h4 timeline-item-position">
+                <span>Full Stack Web Developer</span>
+              </h4>
+
+              <span style="font-size: small; margin-bottom: 1em;">June/2024— July/2024</span>
+              <ul class="timeline-text">
+                <li class="timeline-description">
+                  <b>Project:</b> <span>Transport ticket booking website</span>
+                </li>
+                <li class="timeline-description">
+                  <b>Technologies used:</b> <span>Laravel, AJAX, jQuery, Bootstrap CSS.</span>
+                </li>
+                <li class="timeline-description">
+                  <b>Tools:</b> <span>Git, Postman.</span>
+                </li>
+                <li class="timeline-description">
+                  <b>API:</b> <a href="https://api-docs.vexere.net/"><span>vexere</span> </a>
+                </li>
+                <li class="timeline-description">
+                  <b>Job Description:</b>
+                </li>
+              </ul>
+              <span style="margin-left: 1em;">- Search for bus routes.</span>
+              <span style="margin-left: 1em;">- Display bus route information.</span>
+              <span style="margin-left: 1em;">- Filter and sort bus routes.</span>
+              <span style="margin-left: 1em;">- Implement CMS to manage users, blogs.</span>
+            </li>
+            <li class="timeline-description"></li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Vietnam-Korea University of Information and Communication Technology -
+                VKU</h4>
+              <span> Oct/2020 — Jan/2025</span>
+              <div class="timeline-gpa timeline-education-text">
+                Major:
+                <data value="Information">Information Technology</data>
+              </div>
+              <div class="timeline-gpa timeline-education-text">
+                Specialized:
+                <data value="Digital">Digital Arts and Design.</data>
+              </div>
+              <div class="timeline-gpa timeline-education-text">
+                GPA:
+                <data value="2.8">2.8/4.0</data>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                TOEIC COURSE
+              </h4>
+              <span> Jun/2023 — Jeb/2024</span>
+              <div class="timeline-gpa timeline-education-text">
+                Estimated Score:
+                <data value="550">~550</data>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill" id="skills">
+          <header>
+            <h2 class="h2 article-title">My Skills</h2>
+          </header>
+          <div class="skills-categories">
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Programming Language</h4>
+              <ul class="skills-list">
+                <li class="skills-item">PHP</li>
+                <li class="skills-item">JavaScript</li>
+                <li class="skills-item">CSS</li>
+                <li class="skills-item">SQL</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Frameworks & Libraries:</h4>
+              <ul class="skills-list">
+                <li class="skills-item">Laravel</li>
+                <li class="skills-item">Alpine JS</li>
+                <li class="skills-item">Vue JS</li>
+                <li class="skills-item">Bootstrap CSS</li>
+                <li class="skills-item">Tailwind CSS</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Development Tools</h4>
+              <ul class="skills-list">
+                <li class="skills-item">GIT</li>
+                <li class="skills-item">POSTMAN</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Design Tools</h4>
+              <ul class="skills-list">
+                <li class="skills-item">PHOTOSHOP</li>
+                <li class="skills-item">ILLUSTRATOR</li>
+                <li class="skills-item">FIGMA</li>
+                <li class="skills-item">AFTER EFFECT</li>
+                <li class="skills-item">INDESIGN</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Languages</h4>
+              <ul class="skills-list">
+                <li class="skills-item">English(listening and reading)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+      <!------------------------------------------------ #END RESUME ------------------------------------------------>
+
+      <!------------------------------------------------ #PORTFOLIO ------------------------------------------------>
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Developer</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Designer</button>
+            </li>
+          </ul>
+          <!-- Filter  -->
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <!-- Select List Filter Type Of Project -->
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web Developer</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Graphic Designer</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>UI Designer</button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Project Thumbnail -->
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="unreal">
+              <a href="#" data-detail-category="metameAmusementPark">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" data-detail-category="metameAmusementPark"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/project-1.png"
+                    alt="E-commerce website for restaurants" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-detail-category="metameAmusementPark">E-commerce website for restaurants</h3>
+
+                <div class="unreal-icon">
+                  <p class="project-category tag">Web developer</p>
+                </div>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="unity">
+              <a href="#" data-detail-category="fireFireFire">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" data-detail-category="fireFireFire"></ion-icon>
+                  </div>
+
+                  <img
+                    src=""
+                    alt="Fire Fire Fire" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-detail-category="fireFireFire">Fire Fire Fire</h3>
+
+                <div class="unity-icon">
+                  <p class="project-category tag">Unity</p>
+                </div>
+
+              </a>
+            </li>
+          </ul>
+        </section>
+        
+        <!-- Project Detail E-commerce website for restaurants-->
+        <section class="timeline project-item" data-filter-item data-deactive-item project-detail
+          data-detail-category="metameAmusementPark">
+
+          <ul class="project-list">
+            <!-- E-commerce website for restaurants Image -->
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img
+                    src="https://github.com/Long18/long18.github.io/assets/28853225/d78990f0-2b48-4635-bf33-7ed637940f63"
+                    loading="lazy" alt="Image" />
+                </figure>
+              </a>
+            </div>
+
+
+            <!-- End E-commerce website for restaurants Image -->
+
+            <!-- <div class="project-item active">
+              <a onclick="expandVideo(this)">
+                <figure class="project-video">
+                  <video muted="true" preload="none"
+                    poster="">
+                    <source src="" type="video/mp4"></video>
+                  <button class="play-button"></button>
+                </figure>
+              </a>
+            </div> -->
+          </ul>
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">E-commerce website for restaurants</h3>
+          </div>
+
+          <ul class="timeline-list">
+            <li class="timeline-item">
+              <span>Feb/2023 — Apr/2024</span>
+              <ul>
+                <li>
+                  <ul class="timeline-description-list">
+                    <li class="timeline-description">
+                      <p class="timeline-text description">
+                        Team composition includes a total of 4 individuals, with 3 working in the front-end team and 1
+                        serving as a tester.
+                      </p>
+                    </li>
+                    <li class="timeline-description"></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h1 class="h4 timeline-item-title">Main responsibility:</h1>
+              <ul class="timeline-description-list">
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Added an accept button.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Implemented various hints and icons for better user guidance.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Added and configured various audio elements like fireworks sound, code hacked sound, and main scene
+                    audio setup.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Integrated the Dynomega quest system.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Added functionalities related to sitting animations, including different animations and sitting
+                    spots.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Implemented a spinning cup gimmick with slow-in slow-out speed and on/off features.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Handled passcode interaction, popup pin code, and sync camera between server and client.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Fixed field of view (FOV) issues on SceneCapture camera.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Corrected various interaction and display bugs, such as incorrect icon hints and lighting
+                    inconsistencies.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Improved animation sequences and attachment logic for characters.
+                  </p>
+                </li>
+                <li class="timeline-description"></li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h1 class="h4 timeline-item-title">Achievements:</h1>
+              <ul class="timeline-description-list">
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    <strong>Enhanced User Experience:</strong>
+                    <br>
+                    <strong>Added accept buttons and various hints:</strong> Making the user interface more
+                    intuitive and user-friendly.
+                    <br>
+                    <strong>Implemented dynamic quest systems and interactive elements:</strong> Enhancing
+                    gameplay
+                    depth and engagement.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    <strong>Improved Audio and Visuals:</strong>
+                    <br>
+                    <strong>Integrated various audio effects and sound setups:</strong> Significantly enriching
+                    the
+                    auditory experience.
+                    <br><strong>Addressed visual consistency issues:</strong> Particularly with lighting and
+                    reflection, ensuring a more immersive environment.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    <strong>Increased Interactivity:</strong>
+                    <br>
+                    <strong>Added interactive elements like passcode hints and popup pin codes:</strong> Improving
+                    user interaction and puzzle-solving aspects.
+                    <br><strong>Enhanced interaction mechanics with the environment:</strong> Such as the spinning cup
+                    feature and interaction with input.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    <strong>Optimized Performance and Stability:</strong>
+                    <br>
+                    <strong>Resolved conflicts and bugs:</strong> Leading to a more stable and smoother gameplay
+                    experience.
+                    <br> <strong>Improved character animations and camera handling:</strong> Reducing glitches and
+                    improving overall game fluidity.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="timeline-item"></li>
+          </ul>
+
+          <section class="service">
+            <h3 class="h3 service-title"></h3>
+
+            <ul class="service-list">
+              <a class="service-item" href="https://www.metame.ne.jp/start">
+                <div class="service-icon-box">
+                  <img src="assets/images/icon-dev.svg" alt="Main Website" width="40" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Main Website</h4>
+                </div>
+              </a>
+            </ul>
+
+          </section>
+
+        </section>
+        <!-- End Project Detail E-commerce website for restaurants -->
+      </article>
+      <!------------------------------------------------ #END PORTFOLIO ------------------------------------------------>
+
+      <!------------------------------------------------ #CONTACT ------------------------------------------------>
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245374.53382164054!2d107.91381520581075!3d16.066678558480362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c792252a13%3A0x1df0cb4b86727e06!2zxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1732969844929!5m2!1svi!2s"
+              width="400" height="300" style="border:0;" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="php/contact.php" method="post" id="contactForm" data-toggle="valiator" class="form contactForm"
+            data-form>
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Full name*" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address*" required data-form-input>
+              <input type="text" name="subject" class="form-input" placeholder="Your Subject.." required
+                data-form-input>
+            </div>
+            <textarea name="comments" rows="4" class="form-input" placeholder="Your Message.." required
+              data-form-input></textarea>
+            <button class="form-btn submitBnt" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+      <!------------------------------------------------ #END CONTACT ------------------------------------------------>
+    </div>
+  </main>
+  <script src="assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+
+</html>
