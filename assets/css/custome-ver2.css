@@ -1310,10 +1310,6 @@ main {
   #PORTFOLIO
 \*-----------------------------------*/
 
-.filter-list {
-    display: none;
-}
-
 .filter-select-box {
     position: relative;
     margin-bottom: 25px;
