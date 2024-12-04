@@ -11,7 +11,6 @@ $("#contactForm").on("submit", function(event) {
         email: $("#contactForm [name=email]").val(),
         subject: $("#contactForm [name=subject]").val(),
         message: $("#contactForm [name=comments]").val(),
-    
     };
 
     console.log(formData)
@@ -36,38 +35,55 @@ $("#contactForm").on("submit", function(event) {
         return;
     }
 
-    console.log(formData)
-    sendEmail(formData.name, formData.email ,formData.subject,formData.message);
+    console.log(formData);
+    $("#contactForm [type=submit]").text("Sending...");
 
-    $("#contactForm [type=submit]").text("Sending..");
+    // Gọi hàm gửi email
+    sendEmail(formData.name, formData.email, formData.subject, formData.message);
+
+    // Gửi dữ liệu qua AJAX
+    $.ajax({
+        type: "POST",
+        url: "/php/contact.php", // Make sure the backend is configured to handle POST requests
+        data: formData,
+        success: function(response) {
+          // Handle successful submission
+        },
+        error: function(error) {
+          alert("There was an error with the form submission.");
+        }
+      });
+
     $.ajax({
         type: $("#contactForm").attr("method"),
-        // define the type of HTTP verb we want to use (POST for our form)
         url: $("#contactForm").attr("action"),
-        // the url where we want to POST
         data: formData,
-        // our data object
     }).done(function(data) {
+        // Reset form sau khi gửi thành công
         $("#contactForm")[0].reset();
-        $("#contactForm [type=submit]").text(data);
+        $("#contactForm [type=submit]").text("Sent!");
         setTimeout(function() {
-            $("#contactForm [type=submit]").text("Send");
+            $("#contactForm [type=submit]").text("Send Message");
         }, 4000);
+    }).fail(function(error) {
+        // Xử lý khi có lỗi xảy ra
+        alert("There was an error sending the message. Please try again.");
+        $("#contactForm [type=submit]").text("Send Message");
     });
-
-    
 });
 
 function sendEmail(name, email, subject, message) {
     Email.send({
-        Host:"smtp.gmail.com",
-        Username: "trungdao10a1@gmail.com",
-        Password: "oxfmfzzthsdczdrp",
-        To: "dntrung044@gmail.com",
+        Host: "smtp.gmail.com",
+        Username: "trungdao10a1@gmail.com", // Đảm bảo email này là của bạn
+        Password: "oxfmfzzthsdczdrp", // Không nên để mật khẩu trong mã nguồn
+        To: "dntrung044@gmail.com", // Địa chỉ người nhận
         From: `${email}`,
         Subject: `${subject}`,
         Body: `Name: ${name}, <br/> Email: ${email}, <br/> Message: ${message}`
-
-    }).then($("#contactForm [type=submit]").text("Send")).then((message) => alert("Your email has been sent. But I can receive it. Please contect me as my email is not secure."));
+    }).then(function(response) {
+        alert("Your email has been sent successfully.");
+    }).catch(function(error) {
+        alert("Error sending email: " + error.message);
+    });
 }
-//end form submit handler

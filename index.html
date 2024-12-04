@@ -139,9 +139,9 @@
 
         <div class="separator"></div>
 
-        <button class="old-version" id="old-version-button" title="Click here to view old version">
-          <ion-icon name="trending-down" title="Click here to view old version"></ion-icon>
-          <span>Download CV</span>
+        <button class="old-version" id="old-version-button" title="Click here to view CV">
+          <ion-icon name="trending-down" title="Click here to view CV" role="img" class="md hydrated" aria-label="trending down"></ion-icon>
+          <span>View Curriculum Vitae</span>
         </button>
       </div>
     </aside>
@@ -198,27 +198,27 @@
           <ul class="service-list">
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="" alt="Backend Developer" width="40">
+                <img src="/assets/images/icon-dev.svg" alt="Backend Developer" width="40">
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title unity-tag">Backend Developer</h4>
+                <h4 class="h4 service-item-title application-tag">Backend Developer</h4>
               </div>
             </li>
 
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="" alt="UI Designer" width="40">
+                <img src="/assets/images/icon-ui-design.svg" alt="UI Designer" width="40">
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title unreal-tag">UI Designer</h4>
+                <h4 class="h4 service-item-title unity-tag">UI Designer</h4>
               </div>
             </li>
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="" alt="Graphic Designer" width="40">
+                <img src="/assets/images/icon-design.svg" alt="Graphic Designer" width="40">
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title application-tag">Graphic Designer</h4>
+                <h4 class="h4 service-item-title unreal-tag">Graphic Designer</h4>
               </div>
             </li>
           </ul>
@@ -253,7 +253,7 @@
               <ul class="skills-list">
                 <li class="skills-item" title="Object Oriented Programming">GIT</li>
                 <li class="skills-item">Postman</li>
-                <li class="skills-item" title="Test Driven Development">Docker</li>
+                <li class="skills-item" title="Test Driven Development">Nginx</li>
               </ul>
             </div>
           </div>
@@ -303,7 +303,7 @@
                   <b>Technologies used:</b> <span>Laravel, AlpineJS with Livewire.</span>
                 </li>
                 <li class="timeline-description">
-                  <b>Tools:</b> <span>Git, Postman, Docker.</span>
+                  <b>Tools:</b> <span>Git, Postman, Nginx.</span>
                 </li>
                 <li class="timeline-description">
                   <b>Job Description:</b>
@@ -419,6 +419,7 @@
               <ul class="skills-list">
                 <li class="skills-item">GIT</li>
                 <li class="skills-item">POSTMAN</li>
+                <li class="skills-item">NGINX</li>
               </ul>
             </div>
 
@@ -455,10 +456,19 @@
               <button class="active" data-filter-btn>All</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Developer</button>
+              <button data-filter-btn>Web Development</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Designer</button>
+              <button data-filter-btn>App Development</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>UI Design</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Graphic Design</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Others</button>
             </li>
           </ul>
           <!-- Filter  -->
@@ -475,17 +485,26 @@
                 <button data-select-item>All</button>
               </li>
               <li class="select-item">
-                <button data-select-item>Developer</button>
+                <button data-select-item>Web Development</button>
               </li>
               <li class="select-item">
-                <button data-select-item>Designer</button>
+                <button data-select-item>App Development</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>UI Design</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Graphic Design</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Others</button>
               </li>
             </ul>
           </div>
 
           <!-- Project Thumbnail -->
           <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="developer">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/dntrung044/webmiquang_laravel" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -499,7 +518,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item active" data-filter-item data-category="developer">
+            <li class="project-item active" data-filter-item data-category="app development">
               <a href="https://github.com/dntrung044/MiQuangApp" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -514,7 +533,7 @@
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="developer">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/dntrung044/pharmacy_website" data-detail-category="Coffeeshop" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -529,7 +548,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="developer">
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#" data-detail-category="learningManagementSystem">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -537,14 +556,14 @@
                   </div>
                   <img src="./assets/images/Portfolio/project-11.png" alt="Learning Management System" loading="lazy">
                 </figure>
-                <h3 class="project-title" data-detail-category="learningManagementSystem">Rebuil: LMS, Booking, E-commerce...</h3>
+                <h3 class="project-title" data-detail-category="learningManagementSystem">LMS, Booking, E-commerce...</h3>
                 <div class="unity-icon">
                   <p class="project-category tag">Web developer</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="designer">
+            <li class="project-item  active" data-filter-item data-category="graphic design">
               <a href="https://www.behance.net/gallery/189207807/Logo-Harmony-Coffee-House" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -558,7 +577,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="designer">
+            <li class="project-item  active" data-filter-item data-category="graphic design">
               <a href="https://www.behance.net/gallery/201908551/Intro-logo-Harmony-Coffee" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -572,7 +591,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="designer">
+            <li class="project-item  active" data-filter-item data-category="graphic design">
               <a href="https://www.behance.net/gallery/203347605/B-nhn-din-thuong-hiu-VP" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -586,7 +605,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="designer">
+            <li class="project-item  active" data-filter-item data-category="graphic design">
               <a href="https://www.behance.net/gallery/201909047/Cover-Bia-Sach-C-Di-Ri-S-Dn" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -600,7 +619,21 @@
                 </div>
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="designer">
+            <li class="project-item  active" data-filter-item data-category="ui design">
+              <a href="https://www.behance.net/gallery/201909549/TVC-QUNG-CAO-NUC-CAM-TWISTER" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/Portfolio/project-13.png" alt="UI APP" loading="lazy">
+                </figure>
+                <h3 class="project-title">THIẾT KẾ GIAO DIỆN ỨNG DỤNG ĐẶT ĐỒ ĂN</h3>
+                <div class="unity-icon">
+                  <p class="project-category tag">Figma</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="others">
               <a href="https://www.behance.net/gallery/201909549/TVC-QUNG-CAO-NUC-CAM-TWISTER" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -614,7 +647,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="designer">
+            <li class="project-item  active" data-filter-item data-category="graphic design">
               <a href="https://www.behance.net/gallery/201909309/-Na-Tra-x-Ngao-Binh-?tracking_source=project_owner_other_projects" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -628,6 +661,7 @@
                 </div>
               </a>
             </li>
+            
           </ul>
         </section>
 
@@ -661,18 +695,18 @@
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-            <h3 class="h3">Rebuil: LMS, Booking, E-commerce..</h3>
+            <h3 class="h3">LMS, Booking, E-commerce..</h3>
           </div>
 
           <ul class="timeline-list">
             <li class="timeline-item">
-              <span>Mô tả:</span>
+              <span>Describe:</span>
               <ul>
                 <li>
                   <ul class="timeline-description-list">
                     <li class="timeline-description">
                       <p class="timeline-text description">
-                        Tôi có nguồn của một số dự án cần được xây dựng lại. Hãy liên hệ với tôi để phát triển tiếp tục phát triển dự án.
+                        I have source of some projects that need to be rebuilt. Please contact me to develop further the project.
                       </p>
                     </li>
                     <li class="timeline-description"></li>
@@ -814,7 +848,7 @@
 
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
-          <form action="php/contact.php" method="post" id="contactForm" data-toggle="valiator" class="form contactForm"
+          <form action="/php/contact.php" method="post" id="contactForm" data-toggle="valiator" class="form contactForm"
             data-form>
             <div class="input-wrapper">
               <input type="text" name="name" class="form-input" placeholder="Full name*" required data-form-input>

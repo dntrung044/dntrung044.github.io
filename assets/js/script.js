@@ -276,3 +276,11 @@ skillsButton.addEventListener("click", function () {
     }
   }
 })
+
+document.getElementById("old-version-button").addEventListener("click", function() {
+  // Đường dẫn đến tệp CV của bạn
+  const cvUrl = 'assets/images/CV_fresherPHP_DaoNhatTrung.pdf'; // Cập nhật đường dẫn tệp CV của bạn tại đây
+  
+  // Mở CV trong cửa sổ mới
+  window.open(cvUrl, '_blank');
+});
