@@ -200,7 +200,31 @@
     height: 15px;
     padding-left: 20px;
     margin-top: 10px;
-    background-image: url("https://github.com/Long18/long18.github.io/assets/28853225/fb228421-e62a-4b30-916a-64f4bf5254b9");
+    background-image: url("/assets/images/icon-design.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.ui-des-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding-left: 20px;
+    margin-top: 10px;
+    background-image: url("/assets/images/icon-ui-design.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.others-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding-left: 20px;
+    margin-top: 10px;
+    background-image: url("/assets/images/icon-photo.svg");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top center;
@@ -220,7 +244,7 @@
     height: 25px;
     padding-left: 20px;
     margin-top: 10px;
-    background-image: url("https://github.com/Long18/long18.github.io/assets/28853225/dae83be9-5b8b-483c-a84d-5a0332576ea0");
+    background-image: url("/assets/images/icon-dev.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -239,7 +263,7 @@
     height: 20px;
     padding-left: 20px;
     margin-top: 10px;
-    background-image: url("https://github.com/Long18/long18.github.io/assets/28853225/5bdf960a-bfe1-499e-b4e2-fb9fa0e19af2");
+    background-image: url("/assets/images/icon-app.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
