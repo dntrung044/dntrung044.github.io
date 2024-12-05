@@ -1065,6 +1065,10 @@ main {
     margin-bottom: 7px;
 }
 
+.timeline-item-title:hover {
+    color: var(--orange-yellow-crayola);
+}
+
 .timeline-item-position {
     font-size: var(--fs-6);
     line-height: 1.2;
@@ -2112,7 +2116,7 @@ textarea.form-input::-webkit-resizer {
         align-items: center;
         gap: 18px;
         height: 75px;
-        padding: 15px;
+        padding: 12px;
     }
 
     .service-icon-box {

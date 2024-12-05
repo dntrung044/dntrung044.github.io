@@ -27,7 +27,7 @@
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
         <figure class="avatar-box">
-          <img src="assets/images/avatar.png" alt="Đào Nhật Trung" width="80">
+          <img src="assets/images/avatar.svg" alt="Đào Nhật Trung" width="80">
         </figure>
         <div class="info-content">
           <h1 class="realname" title="Đào Nhật Trung">Đào Nhật Trung</h1>
@@ -140,7 +140,8 @@
         <div class="separator"></div>
 
         <button class="old-version" id="old-version-button" title="Click here to view CV">
-          <ion-icon name="trending-down" title="Click here to view CV" role="img" class="md hydrated" aria-label="trending down"></ion-icon>
+          <ion-icon name="trending-down" title="Click here to view CV" role="img" class="md hydrated"
+            aria-label="trending down"></ion-icon>
           <span>View Curriculum Vitae</span>
         </button>
       </div>
@@ -281,7 +282,8 @@
         <section class="timeline">
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <!-- <ion-icon name="book-outline"></ion-icon> -->
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
             <h3 class="h3">Experience</h3>
           </div>
@@ -296,23 +298,26 @@
 
               <ul class="timeline-text">
                 <li class="timeline-description">
-                  <b>Technologies used:</b> <span>Laravel, AlpineJS with Livewire.</span>
+                  <b>Technologies:</b> <span>Laravel, AlpineJS with Livewire.</span>
                 </li>
                 <li class="timeline-description">
                   <b>Tools:</b> <span>Git, Postman, Nginx.</span>
                 </li>
                 <li class="timeline-description">
-                  <b>Job Description:</b>
+                  <b>Key Responsibilities:</b>
                 </li>
               </ul>
-              <span style="margin-left: 1em;">- Developed backend CMS and API for a taxi booking application.</span>
-              <span style="margin-left: 1em;">- Created sessions and templates for an e-commerce website.</span>
-              <span style="margin-left: 1em;">- Fixed issues in the admin panel for a booking application.</span>
+              <span style="margin-left: 1em;">- Designed and implemented CMS and RESTful APIs for a cross-platform
+                application.</span>
+              <span style="margin-left: 1em;">- Developed reusable session management and templates for website landing
+                pages, improving development efficiency.</span>
+              <span style="margin-left: 1em;">- Resolved issues in the admin panel of a booking application, enhancing
+                usability and performance.</span>
             </li>
 
             <li class="timeline-item">
               <a href="https://sbay.com.vn">
-                <h3 class="h3 timeline-item-title"> Hotel Company </h3>
+                <h3 class="h3 timeline-item-title">Hotel Company </h3>
               </a>
               <h4 class="h4 timeline-item-position">
                 <span>Full Stack Web Developer</span>
@@ -321,25 +326,27 @@
               <span style="font-size: small; margin-bottom: 1em;">June/2024— July/2024</span>
               <ul class="timeline-text">
                 <li class="timeline-description">
-                  <b>Project:</b> <span>Transport ticket booking website</span>
+                  <b>Project:</b> <span>Transport Ticket Booking Website</span>
                 </li>
                 <li class="timeline-description">
-                  <b>Technologies used:</b> <span>Laravel, AJAX, jQuery, Bootstrap CSS.</span>
+                  <b>Technologies:</b> <span>Laravel, AJAX, jQuery, Bootstrap CSS.</span>
                 </li>
                 <li class="timeline-description">
                   <b>Tools:</b> <span>Git, Postman.</span>
                 </li>
                 <li class="timeline-description">
-                  <b>API:</b> <a href="https://api-docs.vexere.net/"><span>vexere</span> </a>
+                  <b>API Integration:</b> <a href="https://api-docs.vexere.net/"><span>vexere</span> </a>
                 </li>
                 <li class="timeline-description">
-                  <b>Job Description:</b>
+                  <b>Key Responsibilities:</b>
                 </li>
               </ul>
-              <span style="margin-left: 1em;">- Search for bus routes.</span>
-              <span style="margin-left: 1em;">- Display bus route information.</span>
-              <span style="margin-left: 1em;">- Filter and sort bus routes.</span>
-              <span style="margin-left: 1em;">- Implement CMS to manage users, blogs.</span>
+              <span style="margin-left: 1em;">- Developed search functionality for bus routes and integrated third-party
+                APIs. </span>
+              <span style="margin-left: 1em;">- Dynamically displayed and managed transport route information.</span>
+              <span style="margin-left: 1em;">- Designed and implemented sorting and filtering features for bus
+                routes.</span>
+              <span style="margin-left: 1em;">- Built a CMS to manage users, blogs, and content.</span>
             </li>
             <li class="timeline-description"></li>
           </ol>
@@ -354,8 +361,12 @@
           </div>
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Vietnam-Korea University of Information and Communication Technology -
-                VKU</h4>
+              <a href="https://daotao.vku.udn.vn/">
+                <h4 class="h4 timeline-item-title">Vietnam-Korea University of Information and Communication Technology
+                  -
+                  VKU
+                </h4>
+              </a>
               <span> Oct/2020 — Jan/2025</span>
               <div class="timeline-gpa timeline-education-text">
                 Major:
@@ -371,9 +382,11 @@
               </div>
             </li>
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                TOEIC COURSE
-              </h4>
+              <a href="https://www.facebook.com/Mr.LamEnglishTOEIC4KyNang/">
+                <h4 class="h4 timeline-item-title">
+                  TOEIC COURSE
+                </h4>
+              </a>
               <span> Jun/2023 — Jeb/2024</span>
               <div class="timeline-gpa timeline-education-text">
                 Estimated Score:
@@ -530,12 +543,14 @@
             </li>
 
             <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://github.com/dntrung044/pharmacy_website" data-detail-category="Coffeeshop" target="_blank">
+              <a href="https://github.com/dntrung044/pharmacy_website" data-detail-category="Coffeeshop"
+                target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline" data-detail-category="Coffeeshop"></ion-icon>
                   </div>
-                  <img src="./assets/images/Portfolio/project-3.png" alt="E-commerce website for restaurants" loading="lazy">
+                  <img src="./assets/images/Portfolio/project-3.png" alt="E-commerce website for restaurants"
+                    loading="lazy">
                 </figure>
                 <h3 class="project-title" data-detail-category="Coffeeshop">Coffee shop website</h3>
                 <div class="unreal-icon">
@@ -552,7 +567,8 @@
                   </div>
                   <img src="./assets/images/Portfolio/project-11.png" alt="Learning Management System" loading="lazy">
                 </figure>
-                <h3 class="project-title" data-detail-category="learningManagementSystem">LMS, Booking, E-commerce...</h3>
+                <h3 class="project-title" data-detail-category="learningManagementSystem">LMS, Booking, E-commerce...
+                </h3>
                 <div class="unreal-icon">
                   <p class="project-category tag">Web developer</p>
                 </div>
@@ -607,7 +623,8 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/Portfolio/project-8.png" alt="Cover Bìa Sách Cứ Đi Rồi Sẽ Đến" loading="lazy">
+                  <img src="./assets/images/Portfolio/project-8.png" alt="Cover Bìa Sách Cứ Đi Rồi Sẽ Đến"
+                    loading="lazy">
                 </figure>
                 <h3 class="project-title">Cover Bìa Sách Cứ Đi Rồi Sẽ Đến</h3>
                 <div class="unity-icon">
@@ -644,7 +661,8 @@
               </a>
             </li>
             <li class="project-item  active" data-filter-item data-category="graphic design">
-              <a href="https://www.behance.net/gallery/201909309/-Na-Tra-x-Ngao-Binh-?tracking_source=project_owner_other_projects" target="_blank">
+              <a href="https://www.behance.net/gallery/201909309/-Na-Tra-x-Ngao-Binh-?tracking_source=project_owner_other_projects"
+                target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -657,7 +675,7 @@
                 </div>
               </a>
             </li>
-            
+
           </ul>
         </section>
 
@@ -669,9 +687,7 @@
             <div class="project-item active">
               <a onclick="expandImage(this)">
                 <figure class="project-img">
-                  <img
-                    src="./assets/images/Portfolio/project-11.png"
-                    loading="lazy" alt="Image" />
+                  <img src="./assets/images/Portfolio/project-11.png" loading="lazy" alt="Image" />
                 </figure>
               </a>
             </div>
@@ -702,7 +718,8 @@
                   <ul class="timeline-description-list">
                     <li class="timeline-description">
                       <p class="timeline-text description">
-                        I have source of some projects that need to be rebuilt. Please contact me to develop further the project.
+                        I have source of some projects that need to be rebuilt. Please contact me to develop further the
+                        project.
                       </p>
                     </li>
                     <li class="timeline-description"></li>
@@ -716,7 +733,8 @@
               <ul class="timeline-description-list">
                 <li class="timeline-description">
                   <p class="timeline-text description">
-                    LMS là trang web cho phép các tổ chức, trung tâm giáo dục, giáo viên, gia sư đăng và bán khoá học, phòng họp, hội nghị, hội thảo,dụng cụ sản phẩm liên quan,…
+                    LMS là trang web cho phép các tổ chức, trung tâm giáo dục, giáo viên, gia sư đăng và bán khoá học,
+                    phòng họp, hội nghị, hội thảo,dụng cụ sản phẩm liên quan,…
                   </p>
                 </li>
                 <li class="timeline-description">
@@ -770,14 +788,16 @@
                   <p class="timeline-text description">
                     <strong>Mẫu giao diện có sẵn cho bạn lựa chọn:</strong>
                     <br>
-                    Bạn có thể nhanh chóng tạo landing page từ các mẫu giao diện hoàn thiện có sẵn rồi chỉnh sửa hình ảnh và logo cho phù hợp với thương hiệu và yêu cầu của mình.
+                    Bạn có thể nhanh chóng tạo landing page từ các mẫu giao diện hoàn thiện có sẵn rồi chỉnh sửa hình
+                    ảnh và logo cho phù hợp với thương hiệu và yêu cầu của mình.
                   </p>
                 </li>
                 <li class="timeline-description">
                   <p class="timeline-text description">
                     <strong>Hỗ trợ giao diện kéo thả:</strong>
                     <br>
-                    Với các công cụ kéo thả giúp bạn tạo ra trang landinge page chuyên nghiệp mà không cần biết ngôn ngữ lập trình. Ngoài ra còn hỗ trợ chèn theo code html và javascript cho các yêu cầu nâng cao.
+                    Với các công cụ kéo thả giúp bạn tạo ra trang landinge page chuyên nghiệp mà không cần biết ngôn ngữ
+                    lập trình. Ngoài ra còn hỗ trợ chèn theo code html và javascript cho các yêu cầu nâng cao.
                   </p>
                 </li>
               </ul>
@@ -796,7 +816,7 @@
                   <p class="timeline-text description">
                     <strong>Nền tảng đa dịch vụ:</strong>
                     <br>
-                   Gọi xe, đặt xe, cung cấp dịch vụ, bán thức ăn, giao hàng,...
+                    Gọi xe, đặt xe, cung cấp dịch vụ, bán thức ăn, giao hàng,...
                   </p>
                 </li>
               </ul>
@@ -844,7 +864,7 @@
 
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
-          <form action="/php/contact.php" method="post" id="contactForm" data-toggle="valiator" class="form contactForm"
+          <form action="https://formspree.io/f/myzyvygz" method="POST" id="contactForm" class="form contactForm"
             data-form>
             <div class="input-wrapper">
               <input type="text" name="name" class="form-input" placeholder="Full name*" required data-form-input>
@@ -854,7 +874,7 @@
             </div>
             <textarea name="comments" rows="4" class="form-input" placeholder="Your Message.." required
               data-form-input></textarea>
-            <button class="form-btn submitBnt" type="submit" disabled data-form-btn>
+            <button class="form-btn submitBnt" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
