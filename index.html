@@ -27,8 +27,26 @@
 
 <body id="body" class="tp-magic-cursor">
    <!-- pre loader area start -->
-   <!-- <div id="loader"></div> -->
-   <div id="cursor"></div>
+   <div id="loading">
+      <div id="loading-center">
+         <div id="loading-center-absolute">
+            <!-- loading content here -->
+            <div class="preloader__content text-center">
+               <div class="preloader__top-text d-flex align-items-center justify-content-between">
+                  <p class="preloader__loading text-start">Loading</p>
+                  <h2 id="tp-loading-number" class="text-end">0</h2>
+               </div>
+               <div id="tp-loading-bar" class="preloader__bar">
+                  <div id="tp-loading-line" class="preloader__bar-inner"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="magic-cursor">
+      <div id="ball"></div>
+   </div>
+   <!-- End magic cursor -->
    <!-- <div id="totop"></div> -->
    <div class="change-theme-bottom">
       <div class="tp-theme-toggle tp-theme-toggle-2 parallax-wrap">
@@ -68,7 +86,138 @@
          </label>
       </div>
    </div>
-   <div id="offcanvus"></div>
+   <div class="tp-offcanvas-area-2 tp-menu-2">
+      <div class="tp-offcanvas-shape">
+         <img class="tp-offcanvas-shape-2" src="/assets/img/offcanvas/bg-shape-3.png" alt="">
+      </div>
+      <div class="tp-offcanvas-circle-1">
+         <span></span>
+      </div>
+      <div class="tp-offcanvas-circle-2">
+         <span></span>
+      </div>
+      <div class="tp-offcanvas-wrapper">
+         <div class="tp-offcanvas-top-2 d-flex align-items-center justify-content-between">
+            <div class="tp-offcanvas-logo-2">
+               <a href="#">
+                  <img class="logo-white" src="/assets/img/logo/logo.png" alt="">
+                  <img class="logo-black" src="/assets/img/logo/logo-black.png" alt="">
+               </a>
+            </div>
+            <div class="tp-offcanvas-close-2">
+               <button class="tp-offcanvas-close-btn-2 tp-offcanvas-open-btn-2">
+                  <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                     <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+               </button>
+            </div>
+         </div>
+         <div class="tp-offcanvas-main-2">
+            <div class="tp-offcanvas-content-2">
+               <h3 class="tp-offcanvas-content-title-2">Hello There!</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+            </div>
+            <div class="tp-main-menu-mobile d-lg-none">
+               <nav></nav>
+            </div>
+            <div class="tp-offcanvas-gallery">
+               <div class="row gx-2">
+                  <div class="col-md-3 col-3">
+                     <div class="tp-offcanvas-gallery-img fix">
+                        <a href="#"><img src="/assets/img/offcanvas/offcanvas-1.jpg" alt=""></a>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-3">
+                     <div class="tp-offcanvas-gallery-img fix">
+                        <a href="#"><img src="/assets/img/offcanvas/offcanvas-2.jpg" alt=""></a>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-3">
+                     <div class="tp-offcanvas-gallery-img fix">
+                        <a href="#"><img src="/assets/img/offcanvas/offcanvas-3.jpg" alt=""></a>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-3">
+                     <div class="tp-offcanvas-gallery-img fix">
+                        <a href="#"><img src="/assets/img/offcanvas/offcanvas-2.jpg" alt=""></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="tp-offcanvas-contact-2">
+               <h3 class="tp-offcanvas-contact-title-2">Information</h3>
+   
+               <ul>
+                  <li><a href="tel:1245654">+ 4 20 7700 1007</a></li>
+                  <li><a href="mailto:hello@diego.com">hello@diego.com</a></li>
+                  <li><a href="#">Avenue de Roma 158b, Lisboa</a></li>
+               </ul>
+            </div>
+            <div class="tp-offcanvas-social-2">
+               <h3 class="tp-offcanvas-contact-title-2">Follow Us</h3>
+               <ul>
+                  <li>
+                     <a href="#">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M11.25 1.5H4.75C2.95507 1.5 1.5 2.95507 1.5 4.75V11.25C1.5 13.0449 2.95507 14.5 4.75 14.5H11.25C13.0449 14.5 14.5 13.0449 14.5 11.25V4.75C14.5 2.95507 13.0449 1.5 11.25 1.5Z"
+                              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           <path
+                              d="M10.6016 7.5907C10.6818 8.13166 10.5894 8.68414 10.3375 9.16955C10.0856 9.65497 9.68711 10.0486 9.19862 10.2945C8.71014 10.5404 8.15656 10.6259 7.61663 10.5391C7.0767 10.4522 6.57791 10.1972 6.19121 9.81055C5.80451 9.42385 5.54959 8.92506 5.46271 8.38513C5.37583 7.8452 5.46141 7.29163 5.70728 6.80314C5.95315 6.31465 6.34679 5.91613 6.83221 5.66425C7.31763 5.41238 7.87011 5.31998 8.41107 5.4002C8.96287 5.48202 9.47372 5.73915 9.86817 6.1336C10.2626 6.52804 10.5197 7.0389 10.6016 7.5907Z"
+                              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           <path d="M11.5742 4.42578H11.5842" stroke="currentColor" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M2.50589 12.7494C4.57662 16.336 9.16278 17.5648 12.7494 15.4941C14.2113 14.65 15.2816 13.388 15.8962 11.9461C16.7895 9.85066 16.7208 7.37526 15.4941 5.25063C14.2674 3.12599 12.1581 1.82872 9.89669 1.55462C8.34063 1.366 6.71259 1.66183 5.25063 2.50589C1.66403 4.57662 0.435172 9.16278 2.50589 12.7494Z"
+                              stroke="currentColor" stroke-width="1.5" />
+                           <path
+                              d="M12.7127 15.4292C12.7127 15.4292 12.0086 10.4867 10.5011 7.87559C8.99362 5.26451 5.28935 2.57155 5.28935 2.57155M5.68449 15.6124C6.79553 12.2606 12.34 8.54524 16.3975 9.43537M12.311 2.4082C11.1953 5.72344 5.75732 9.38453 1.71875 8.58915"
+                              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M1 5.5715H6.33342C7.62867 5.5715 8.61917 6.56199 8.61917 7.85725C8.61917 9.15251 7.62867 10.143 6.33342 10.143H1.76192C1.30477 10.143 1 9.83823 1 9.38108V1.76192C1 1.30477 1.30477 1 1.76192 1H5.5715C6.86676 1 7.85725 1.99049 7.85725 3.28575C7.85725 4.58101 6.86676 5.5715 5.5715 5.5715H1Z"
+                              stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                           <path
+                              d="M10.9062 7.09454H17.0016C17.0016 5.41832 15.6301 4.04688 13.9539 4.04688C12.2777 4.04688 10.9062 5.41832 10.9062 7.09454ZM10.9062 7.09454C10.9062 8.77076 12.2777 10.1422 13.9539 10.1422H15.2492"
+                              stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                           <path d="M16.1125 1.44434H11.668" stroke="currentColor" stroke-width="1.2"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M12.75 13H5.25C3 13 1.5 11.5 1.5 9.25V4.75C1.5 2.5 3 1 5.25 1H12.75C15 1 16.5 2.5 16.5 4.75V9.25C16.5 11.5 15 13 12.75 13Z"
+                              stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                           <path
+                              d="M8.70676 5.14837L10.8006 6.40465C11.5543 6.90716 11.5543 7.66093 10.8006 8.16344L8.70676 9.41972C7.86923 9.92224 7.19922 9.50348 7.19922 8.5822V6.06964C7.19922 4.98086 7.86923 4.64585 8.70676 5.14837Z"
+                              fill="currentColor" />
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
 
    <header class="header-dynamic shadow">
       <div class="header-logo">
@@ -132,9 +281,195 @@
       <div id="smooth-content">
          <main>
             <!-- hero area -->
-            <div id="hero"></div>
+            <section class="tp-hero-3__area black-bg-3 tp-hero-3__ptb z-index-1 smooth p-relative tp-btn-trigger-3">
+               <div class="tp-hero-3__shape-1">
+                  <img src="/assets/img/hero/hero-shape-2-1.png" alt="">
+               </div>
+               <div class="tp-hero-3__shape-2">
+                  <img src="/assets/img/hero/hero-shape-2-2.png" alt="">
+               </div>
+            
+               <div class="tp-isomeric-grid d-none">
+                  <div class="tp-isomeric-grid-item tp-isomeric-grid-horizontal">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+                  <div class="tp-isomeric-grid-item tp-isomeric-grid-vertical">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+               </div>
+            
+               <div class="tp-hero-3__social-wrap d-none d-lg-inline-flex">
+                  <a href="https://www.facebook.com/dntrung044">Facebook</a>
+                  <a href="https://www.youtube.com/dntrung044">Youtube</a>
+                  <a href="behance.net/dntrung044">Behance</a>
+                  <a href="https://github.com//dntrung044">Github</a>
+               </div>
+            
+               <a href="#about">
+                  <div class="tp-hero-3__scrool-down d-none d-lg-inline-flex">
+                     <span class="text">Scroll</span>
+                     <span>
+                        <svg width="14" height="93" viewBox="0 0 14 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M14 85.8995C10.1308 85.8995 6.9999 88.9319 6.9999 92.6793" stroke="white" stroke-width="2"
+                              stroke-miterlimit="10"></path>
+                           <path d="M7 92.6793C7 88.9319 3.86911 85.8995 -0.000102413 85.8995" stroke="white" stroke-width="2"
+                              stroke-miterlimit="10"></path>
+                           <path d="M7 0L7 90" stroke="white" stroke-width="2" stroke-miterlimit="10"></path>
+                        </svg>
+                     </span>
+                  </div>
+               </a>
+            
+               <div class="container">
+                  <div class="row align-items-end">
+                     <div class="col-xl-12">
+                        <div class="tp-hero-3__btn-box">
+                           <p class="tp-char-animation">
+                              <img src="/assets/img/hero/hero-hand.png" alt="" class="tp-char-animation">
+                              Hello, I'm Đào Nhật Trung!
+                           </p>
+                        </div>
+                        <div class="tp-hero-3__content">
+                           <h3 class="tp-hero-3__title tp-char-animation">
+            
+                           </h3>
+                           <h1 class="tp-hero-title cd-headline clip tp_title_anim">
+                              <span class="cd-words-wrapper">
+                                 <b class="app">VISUAL</b>
+                                 <b class="is-visible">UX/UI</b>
+                                 <b class="app">GRAPHIC</b>
+                              </span>
+                              Designer
+                           </h1>
+            
+                        </div>
+                        <div class="tp-hero-3__btn-box tp_wrap_anim">
+                           <p class="mb-4">Bringing creative ideas to life with stunning and intuitive designs.</p>
+                           <div class="tp-btn-bounce-3">
+                              <a class="tp-btn-blue" href="projects.html">
+                                 <span class="text"> View Portfolio</span>
+                                 <span class="icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M1 1L10 10" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round" />
+                                       <path d="M10 1V10H1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round" />
+                                    </svg>
+                                 </span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
             <!-- about area -->
-            <div id="about"></div>
+            <div id="service" class="tp-service-3__area services-panel-area tp-service-3__overlay-bg black-bg-2 pt-150 pb-125 z-index-1 cursor-style">
+               <div class="tp-service-3__circle-img">
+                 <span class="text-img">
+                  <img src="/assets/img/footer/footer-circle-img.png" alt="">
+                 </span>
+                  <div class="shape">
+                     <svg width="260" height="70" viewBox="0 0 260 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M68.7285 34.1352C48.3941 10.6976 13.8796 0.514191 0 0.514191C93.4783 0.514191 276.081 -0.642708 258.863 0.514191C236.79 1.99739 217.224 6.94161 191.137 34.1352C140.468 93.9609 98.3272 68.2507 68.7285 34.1352Z" fill="currentcolor"></path>
+                     </svg>    
+                  </div>                 
+               </div>
+            
+               <div class="tp-service-3__shape-1">
+                  <img src="/assets/img/portfolio/shape-1.png" alt="">
+               </div>
+               <div class="tp-service-3__shape-2 d-none d-lg-block">
+                  <img src="/assets/img/portfolio/shape-2.png" alt="">
+               </div>
+               <div class="tp-service-3__shape-3">
+                  <img data-speed="1.2" src="/assets/img/portfolio/star.png" alt="" data-lag="0" style="translate: none; rotate: none; scale: none; transform: translate(0px, -29.25px); will-change: transform;">
+               </div>
+            
+               <div class="container container-large">
+                  <div class="tp-about-inner">
+                      <span class="tp-about-inner-border transition-3"></span>
+                      <div class="row">
+                          <div class="col-xl-5 col-lg-5">
+                              <div class="tp-about-wrapper">
+                                  <div class="tp-section-title-wrapper p-relative mb-45">
+                                      <span class="tp-section-subtitle-bg">About Me</span>
+                                      <span class="tp-section-subtitle tp-section-subtitle-1 tp-about-subtitle">About
+                                          Me</span>
+                                  </div>
+                                  <div class="tp-about-thumb-wrapper p-relative z-index-1">
+                                      <div class="tp-about-thumb p-relative z-index-1">
+                                          <div class="tp-about-thumb-bg-shape include-bg"
+                                              data-background="/assets/img/about/shape/about-shape-1.png"></div>
+                                          <img src="/assets/img/about/anhtho.png" style="height: 326px; margin-left: 1rem;">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-xl-7 col-lg-7">
+                              <div class="tp-about-desc">
+                                  <div class="tp-about-desc-content mb-40">
+                                      <p>Hi! I’m <span><strong>Trung</strong></span>, a passionate <span><strong>UI/UX and 2D
+                                                  Graphic Designer</strong></span> with a strong foundation in
+                                          <span><strong>design principles</strong></span>, <span><strong>user
+                                                  experience</strong></span>, and <span><strong>visual
+                                                  aesthetics</strong></span>. With a background in <span><strong>frontend
+                                                  development</strong></span>, I have a solid understanding of
+                                          <span><strong>design feasibility</strong></span> and <span><strong>implementation in
+                                                  real-world applications</strong></span>, ensuring
+                                          <span><strong>creativity</strong></span> and
+                                          <span><strong>functionality</strong></span> in my work.
+                                      </p>
+                                  </div>
+                                  <div class="tp-about-fact">
+                                      <div class="row">
+                                          <div class="col-md-4 col-sm-6 mb-30">
+                                              <div class="tp-about-fact-item">
+                                                  <!-- <img src="/assets/img/about/phone.png" alt="" style="height: 50px; color: aliceblue;"> -->
+                                                  <h4>
+                                                   Email
+                                               </h4>
+                                                  <p>0375307021</p>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-4 col-sm-6 mb-30">
+                                              <div class="tp-about-fact-item">
+                                                  <h4>
+                                                      Email
+                                                  </h4>
+                                                  <p>dntrung044@gmail.come</p>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-4 col-sm-6 mb-30">
+                                              <div class="tp-about-fact-item">
+                                                  <h4>Address</h4>
+                                                  <p>Da Nang</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
             <!-- service area -->
             <div class="tp-services-area tp-sv tp-services-bg-text-animation theme-bg-2 fix">
                <div class="container container-large">
@@ -314,29 +649,460 @@
                </div>
             </div>
             <!-- skill area -->
-            <div id="skills"></div>
+            <section class="tp-skill-area pt-115 pb-105 p-relative z-index-1 fix theme-bg-2">
+               <!-- <div class="tp-skill-shape">
+                   <span class="tp-skill-shape-1"></span>
+                   <span class="tp-skill-shape-2"></span>
+               </div> -->
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xl-12">
+                           <div class="tp-skill-section-title">
+                               <div class="tp-section-title-wrapper tp_text_anim mb-30 text-center">
+                                   <div class="tp-section-title-inner tp_title_anim p-relative">
+                                       <h3 class="tp-section-title">Skills & tools</h3>
+                                   </div>
+                                   <p>For those who know what they're looking for..</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-xl-12">
+                           <div class="tp-skill-tab tp-tab d-flex align-items-center justify-content-center mb-70">
+                               <nav>
+                                   <div class="nav nav-tabs tp-marker-tab" id="nav-tab" role="tablist">
+                                       <button class="nav-link " id="nav-tech-tab" data-bs-toggle="tab" data-bs-target="#nav-tech"
+                                           type="button" role="tab" aria-controls="nav-tech" aria-selected="true">Tech</button>
+                                       <button class="nav-link active" id="nav-design-tab" data-bs-toggle="tab"
+                                           data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design"
+                                           aria-selected="false">Design</button>
+                                       <span id="lineMarker"></span>
+                                   </div>
+                               </nav>
+           
+                           </div>
+                       </div>
+                   </div>
+           
+                   <div class="row">
+                       <div class="col-xl-12">
+                           <div class="tab-content" id="nav-tabContent">
+                               <div class="tab-pane fade " id="nav-tech" role="tabpanel" aria-labelledby="nav-tech-tab"
+                                   tabindex="0">
+                                   <div class="tp-skill-tab-content tp-skill-radius">
+                                       <div class="row">
+                                           <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                                               <div class="tp-skill-item text-center">
+                                                   <div
+                                                       class="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
+                                                       <div class="tp-skill-icon">
+                                                           <span>
+                                                               <img src="/assets/img/skill/laravel.png" alt=""
+                                                                   style="height: 56px;">
+                                                           </span>
+                                                       </div>
+                                                       <div class="tp-skill-content">
+                                                           <h3 class="tp-skill-title">Laravel</h3>
+                                                       </div>
+                                                   </div>
+           
+                                               </div>
+                                           </div>
+                                           <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                                               <div class="tp-skill-item text-center">
+                                                   <div
+                                                       class="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
+                                                       <div class="tp-skill-icon">
+                                                           <span>
+                                                               <img src="/assets/img/skill/vue.png" alt="">
+                                                           </span>
+                                                       </div>
+                                                       <div class="tp-skill-content">
+                                                           <h3 class="tp-skill-title">Vue.Js</h3>
+                                                       </div>
+                                                   </div>
+           
+                                               </div>
+                                           </div>
+                                           <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                                               <div class="tp-skill-item text-center">
+                                                   <div
+                                                       class="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
+                                                       <div class="tp-skill-icon">
+                                                           <span>
+                                                               <img src="/assets/img/skill/tailwind.png" style="height: 56px;">
+                                                           </span>
+                                                       </div>
+                                                       <div class="tp-skill-content">
+                                                           <h3 class="tp-skill-title">Tailwind CSS</h3>
+                                                       </div>
+                                                   </div>
+           
+                                               </div>
+                                           </div>
+                                           <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                                               <div class="tp-skill-item text-center">
+                                                   <div
+                                                       class="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
+                                                       <div class="tp-skill-icon">
+                                                           <span>
+                                                               <img src="/assets/img/skill/bootstrap.png" alt=""
+                                                                   style="height: 56px;">
+                                                           </span>
+                                                       </div>
+                                                       <div class="tp-skill-content">
+                                                           <h3 class="tp-skill-title">Bootstrap</h3>
+                                                       </div>
+                                                   </div>
+           
+                                               </div>
+                                           </div>
+                                           <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                                               <div class="tp-skill-item text-center">
+                                                   <div
+                                                       class="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
+                                                       <div class="tp-skill-icon">
+                                                           <span>
+                                                               <img src="/assets/img/skill/git.png" alt="" style="height: 56px;">
+                                                           </span>
+                                                       </div>
+                                                       <div class="tp-skill-content">
+                                                           <h3 class="tp-skill-title">GIT</h3>
+                                                       </div>
+                                                   </div>
+           
+                                               </div>
+                                           </div>
+                                           <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                                               <div class="tp-skill-item text-center">
+                                                   <div
+                                                       class="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
+                                                       <div class="tp-skill-icon">
+                                                           <span>
+                                                               <img src="/assets/img/skill/kotlin.png" style="height: 56px;">
+                                                           </span>
+                                                       </div>
+                                                       <div class="tp-skill-content">
+                                                           <h3 class="tp-skill-title">Kotlin</h3>
+                                                       </div>
+                                                   </div>
+           
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="tab-pane fade show active" id="nav-design" role="tabpanel"
+                                   aria-labelledby="nav-design-tab" tabindex="0">
+                                   <div class="tp-skill-tab-content tp-skill-radius">
+                                       <div class="row">
+                                           <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                                               <div class="tp-skill-item text-center">
+                                                   <div
+                                                       class="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
+                                                       <div class="tp-skill-icon">
+                                                           <span>
+                                                               <img src="/assets/img/skill/ai.png" style="height: 56px;">
+                                                           </span>
+                                                       </div>
+                                                       <div class="tp-skill-content">
+                                                           <h3 class="tp-skill-title">Illustrator</h3>
+                                                       </div>
+                                                   </div>
+           
+                                               </div>
+                                           </div>
+                                           <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                                               <div class="tp-skill-item text-center">
+                                                   <div
+                                                       class="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
+                                                       <div class="tp-skill-icon">
+                                                           <span>
+                                                               <img src="/assets/img/skill/figma.png" style="height: 56px;">
+                                                           </span>
+                                                       </div>
+                                                       <div class="tp-skill-content">
+                                                           <h3 class="tp-skill-title">Figma</h3>
+                                                       </div>
+                                                   </div>
+           
+                                               </div>
+                                           </div>
+           
+                                           <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                                               <div class="tp-skill-item text-center">
+                                                   <div
+                                                       class="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
+                                                       <div class="tp-skill-icon">
+                                                           <span>
+                                                               <img src="/assets/img/skill/photoshop.png" alt="">
+                                                           </span>
+                                                       </div>
+                                                       <div class="tp-skill-content">
+                                                           <h3 class="tp-skill-title">Photoshop</h3>
+                                                       </div>
+                                                   </div>
+           
+                                               </div>
+                                           </div>
+                                           <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                                               <div class="tp-skill-item text-center">
+                                                   <div
+                                                       class="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
+                                                       <div class="tp-skill-icon">
+                                                           <span>
+                                                               <img src="/assets/img/skill/indesign.png" style="height: 56px;">
+                                                           </span>
+                                                       </div>
+                                                       <div class="tp-skill-content">
+                                                           <h3 class="tp-skill-title">Indesign </h3>
+                                                       </div>
+                                                   </div>
+           
+                                               </div>
+                                           </div>
+                                           <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                                               <div class="tp-skill-item text-center">
+                                                   <div
+                                                       class="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
+                                                       <div class="tp-skill-icon">
+                                                           <span>
+                                                               <img src="/assets/img/skill/ae.png" alt="" style="height: 56px;">
+                                                           </span>
+                                                       </div>
+                                                       <div class="tp-skill-content">
+                                                           <h3 class="tp-skill-title">After Effect</h3>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                                               <div class="tp-skill-item text-center">
+                                                   <div
+                                                       class="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
+                                                       <div class="tp-skill-icon">
+                                                           <span>
+                                                               <img src="/assets/img/skill/capcut.webp" style="height: 56px;">
+                                                           </span>
+                                                       </div>
+                                                       <div class="tp-skill-content">
+                                                           <h3 class="tp-skill-title">CapCut</h3>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </section>
             <!-- portfolio area -->
-            <div id="portfolio"></div>
+            <section class="tp-project-3__area p-relative black-bg-3 pt-110  pb-110">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-12">
+                        <div class="tp-project-3__title-box pb-30 text-center portfolio-sec-pin">
+                           <h3 class="tp-section-title-3 tp_title_anim">Personal Projects</h3>
+                        </div>
+                     </div>
+                  </div>
+            
+                  <div class="row">
+                     <div class="col-xl-12">
+                        <div class="tp-portfolio-item-wrapper-3">
+                           <div class="tp-portfolio-item-3 portfolio-panel pb-80 tp-hover-reveal-text">
+                              <a href="https://www.behance.net/gallery/222692507/Skyways-Airlines-App-UI">
+                                 <img src="/assets/img/portfolio/3/ui_skyways.png" alt="">
+                                 <span></span>
+                                 <div class="tp-portfolio-view-btn-3">
+                                    <span>View on<br> Behance</span>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="tp-portfolio-item-3 portfolio-panel pb-80 tp-hover-reveal-text">
+                              <a href="https://www.behance.net/gallery/221676753/SKYWAYS-AIRLINE-BRAND-IDENTITY">
+                                 <img src="/assets/img/portfolio/3/bd_skyways.png" alt="">
+                                 <span></span>
+                                 <div class="tp-portfolio-view-btn-3">
+                                    <span>View on<br> Behance</span>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="tp-portfolio-item-3 portfolio-panel pb-80 tp-hover-reveal-text">
+                              <a href="https://www.behance.net/gallery/203347605/Harmony-Coffee-Brand-Identity">
+                                 <img src="/assets/img/portfolio/3/bd_harmony.png" alt="">
+                                 <span></span>
+                                 <div class="tp-portfolio-view-btn-3">
+                                    <span>View <br> Behance</span>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="tp-portfolio-item-3 portfolio-panel pb-80 tp-hover-reveal-text">
+                              <a href="https://www.behance.net/gallery/221677039/Quang-noodle-restaurant-application">
+                                 <img src="/assets/img/portfolio/3/ui_noodles.png" alt="">
+                                 <span></span>
+                                 <div class="tp-portfolio-view-btn-3">
+                                    <span>View <br> Behance</span>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+            
+                  <div class="row align-items-end">
+                     <div class="tp-blog-3__btn text-start text-md-center">
+                        <a class="tp-btn-blue" href="projects.html">
+                           <span class="text"> View All Project</span>
+                           <span class="icon">
+                              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M1 1L10 10" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                 <path d="M10 1V10H1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                              </svg>
+                           </span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </section>
 
          </main>
-         <div id="footer"></div>
+         <footer>
+            <div
+                class="tp-footer-3__wrapper tp-footer-3__overlay-bg black-bg-2 p-relative z-index-1 fix tp-mouse-move-btn-section cursor-style">
+                <div class="tp-footer-3__shape-1">
+                    <img src="/assets/img/footer/footer-shape.png" alt="">
+                </div>
+                <!-- <div class="tp-footer-3__img">
+                    <img src="/assets/img/footer/footer-3-1.png" alt="">
+                </div> -->
+                <div class="tp-footer-3__area pt-120 pb-120">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-12">
+                                <div class="tp-footer-3__title-box">
+                                    <span class="tp-footer-3__subtitle">Contact Me</span>
+                                    <h3 class="tp-footer-3__title tp_title_anim">Let's work Together</h3>
+                                </div>
+                                <div class="tp-contact-2__top-info mb-80 d-flex align-items-center justify-content-center">
+                                    <div class="parallax-wrap">
+                                        <div class="parallax-element">
+                                            <a href="mailto:dnturng044@mail.com">
+                                                <img src="assets/img/contact/icon-1.png" alt="">
+                                                <span>dnturng044@mail.com</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="parallax-wrap">
+                                        <div class="parallax-element">
+                                            <a href="tel:0375307021">
+                                                <img src="assets/img/contact/icon-2.png" alt="">
+                                                <span>+(84) 375307021</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tp-contact-2__bottom-info">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-10">
+                                            <form action="#">
+                                                <div class="row">
+                                                   <div class="col-xl-4 col-lg-4 mb-50">
+                                                      <div class="tp-contact-2__input">
+                                                         <input class="input-field" type="text" placeholder="Your Name">
+                                                         <span class="focus-border"></span>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-xl-4 col-lg-4 mb-50">
+                                                      <div class="tp-contact-2__input">
+                                                         <input class="input-field" type="text" placeholder="Your Email">
+                                                         <span class="focus-border"></span>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-xl-4 col-lg-4 mb-50">
+                                                      <div class="tp-contact-2__select">
+                                                         <select class="input-field" style="display: none;">
+                                                            <option>Subject (optional)</option>
+                                                            <option>Greeting</option>
+                                                            <option>Recruitment</option> 
+                                                         </select>
+                                                            <div class="nice-select input-field" tabindex="0">
+                                                                <span class="current">Subject (optional)</span>
+                                                                <ul class="list">
+                                                                    <li data-value="Subject (optional)" class="option selected focus">Subject (optional)</li>
+                                                                    <li data-value="Greeting" class="option">Greeting</li>
+                                                                    <li data-value="Recruitment" class="option">Recruitment</li>
+                                                                </ul>
+                                                            </div>
+                                                         <span class="focus-border"></span>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-xl-12">
+                                                      <div class="tp-contact-2__textarea">
+                                                         <textarea class="input-field" placeholder="Your message here..."></textarea>
+                                                         <span class="focus-border"></span>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-xl-12">
+                                                      <div class="tp-contact-2__btn text-center ">
+                                                         <div class="parallax-wrap d-inline-block">
+                                                            <div class="parallax-element">
+                                                               <a href="/updating.html" class="tp-btn-pink-large">
+                                                                  <span data-hover="Send Message">
+                                                                     Send Message
+                                                                  </span>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-copyright-3__area">
+                    <div class="tp-copyright-3__border-top">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-3 col-lg-3 col-md-3">
+                                    <div class="tp-copyright-3__left text-center text-md-start">
+                                        <p>© 2025 Dntrung044.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-9 col-md-9 d-none d-md-block">
+                                    <div class="tp-copyright-3__social text-end">
+                                        <ul>
+                                            <li><a href="https://facebook.com/dntrung044"><i
+                                                        class="fa-brands fa-facebook-f"></i>Facebook</a></li>
+                                            <li><a href="https://youtube.com/@dntrung044"><i
+                                                        class="fa-brands fa-youtube"></i>Youtube</a></li>
+                                            <li><a href="https://behance.net/dntrung044"><i
+                                                        class="fa-brands fa-behance"></i>Behance</a></li>
+                                            <li><a href="https://github.com/dntrung044"><i
+                                                        class="fa-brands fa-github"></i>Github</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
       </div>
    </div>
 
-   <script>
-      const sections = ["loader", "cursor", "totop", "offcanvus", "header", "hero", "brand", "services",
-         "about", "portfolio", "skills", "award", "price", "footer"];
-
-      sections.forEach(section => {
-         const element = document.getElementById(section);
-         if (element) {
-            fetch(`components/${section}.html`)
-               .then(res => res.text())
-               .then(data => element.innerHTML = data)
-               .catch(err => console.error(`Error loading ${section}:`, err));
-         }
-      });
-   </script>
    <!-- JS here -->
    <script src="/assets/js/vendor/jquery.js"></script>
    <script src="/assets/js/bootstrap-bundle.js"></script>
