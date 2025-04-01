@@ -337,6 +337,28 @@
 		});
 	}
 	smoothSctoll();
+	
+	 
+	// Hàm xử lý thay đổi vị trí của .change-theme-bottom
+	// function handleThemeTogglePosition() {
+	// 	const themeToggle = document.querySelector('.change-theme-bottom');
+	// 	if (!themeToggle) return;
+
+	// 	const scroll = windowOn.scrollTop();
+
+	// 	if (scroll > 300) {
+	// 		// Chuyển sang bên trái
+	// 		themeToggle.style.right = 'auto';
+	// 		themeToggle.style.left = '50px';
+	// 	} else {
+	// 		// Trở lại bên phải
+	// 		themeToggle.style.left = 'auto';
+	// 		themeToggle.style.right = '50px';
+	// 	}
+	// }
+
+	// Gắn sự kiện cuộn trang để gọi hàm
+	// windowOn.on('scroll', handleThemeTogglePosition);
 
 	function back_to_top() {
 		var btn = $('#back_to_top');
