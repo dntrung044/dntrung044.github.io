@@ -1222,7 +1222,7 @@ div.demo img {
 }
 
 .tp-theme-toggle-2 .tp-theme-toggle-main.light-active .tp-theme-toggle-light {
-  color: var(--tp-common-black);
+  color: var(--tp-common-white);
 }
 
 .tp-theme-toggle-main {
