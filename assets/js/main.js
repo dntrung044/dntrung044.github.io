@@ -183,64 +183,64 @@
 	});
 
 
-	// document.addEventListener("DOMContentLoaded", function () {
-	// 	const header = document.querySelector(".header-dynamic");
-	// 	const homeLink = document.querySelector(".header-items .header-item:first-child .nav-link-custom");
+	document.addEventListener("DOMContentLoaded", function () {
+		const header = document.querySelector(".header-dynamic");
+		const homeLink = document.querySelector(".header-items .header-item:first-child .nav-link-custom");
 	
-	// 	if (!header) return;
+		if (!header) return;
 	
-	// 	let lastScrollY = window.scrollY;
+		let lastScrollY = window.scrollY;
 	
-	// 	window.addEventListener("scroll", function () {
-	// 		let currentScrollY = window.scrollY;
+		window.addEventListener("scroll", function () {
+			let currentScrollY = window.scrollY;
 	
-	// 		if (currentScrollY > 100) {
-	// 			header.classList.add("header-small");
+			if (currentScrollY > 100) {
+				header.classList.add("header-small");
 	
-	// 			// Đẩy header về trái hoặc phải dựa vào vị trí
-	// 			if (window.innerWidth / 2 < header.getBoundingClientRect().left) {
-	// 				header.classList.add("right");
-	// 				header.classList.remove("left");
-	// 			} else {
-	// 				header.classList.add("left");
-	// 				header.classList.remove("right");
-	// 			}
+				// Đẩy header về trái hoặc phải dựa vào vị trí
+				if (window.innerWidth / 2 < header.getBoundingClientRect().left) {
+					header.classList.add("right");
+					header.classList.remove("left");
+				} else {
+					header.classList.add("left");
+					header.classList.remove("right");
+				}
 	
-	// 			if (homeLink) homeLink.classList.remove("active"); // Xoá class active khỏi Home
-	// 		} else {
-	// 			header.classList.remove("header-small", "left", "right");
-	// 		}
+				if (homeLink) homeLink.classList.remove("active"); // Xoá class active khỏi Home
+			} else {
+				header.classList.remove("header-small", "left", "right");
+			}
 	
-	// 		// Khi cuộn lên → mở rộng lại header ngay lập tức
-	// 		if (currentScrollY < lastScrollY) {
-	// 			header.classList.remove("header-small", "left", "right");
-	// 		}
+			// Khi cuộn lên → mở rộng lại header ngay lập tức
+			if (currentScrollY < lastScrollY) {
+				header.classList.remove("header-small", "left", "right");
+			}
 	
-	// 		lastScrollY = currentScrollY;
-	// 	});
+			lastScrollY = currentScrollY;
+		});
 	
-	// 	// Hover vào header nhỏ → mở rộng lại
-	// 	header.addEventListener("mouseenter", function () {
-	// 		if (header.classList.contains("header-small")) {
-	// 			header.classList.remove("header-small", "left", "right");
-	// 		}
-	// 	});
+		// Hover vào header nhỏ → mở rộng lại
+		header.addEventListener("mouseenter", function () {
+			if (header.classList.contains("header-small")) {
+				header.classList.remove("header-small", "left", "right");
+			}
+		});
 	
-	// 	// Rời chuột → thu nhỏ lại nếu đã scroll (chỉ khi đang ở header nhỏ)
-	// 	header.addEventListener("mouseleave", function () {
-	// 		if (window.scrollY > 100 && !header.classList.contains("header-small")) {
-	// 			header.classList.add("header-small");
+		// Rời chuột → thu nhỏ lại nếu đã scroll (chỉ khi đang ở header nhỏ)
+		header.addEventListener("mouseleave", function () {
+			if (window.scrollY > 100 && !header.classList.contains("header-small")) {
+				header.classList.add("header-small");
 	
-	// 			if (window.innerWidth / 2 < header.getBoundingClientRect().left) {
-	// 				header.classList.add("right");
-	// 				header.classList.remove("left");
-	// 			} else {
-	// 				header.classList.add("left");
-	// 				header.classList.remove("right");
-	// 			}
-	// 		}
-	// 	});
-	// });
+				if (window.innerWidth / 2 < header.getBoundingClientRect().left) {
+					header.classList.add("right");
+					header.classList.remove("left");
+				} else {
+					header.classList.add("left");
+					header.classList.remove("right");
+				}
+			}
+		});
+	});
 
 	// style 1
 	$(".tp-offcanvas-open-btn-2").on("click", function () {
