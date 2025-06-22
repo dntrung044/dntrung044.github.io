@@ -2587,10 +2587,12 @@ div.tp-theme-toggle-single .themepure-theme-toggle-input {
 }
 
 .tp-btn-border-sm {
-  height: 50px;
-  line-height: 48px;
+  height: 64px;
+  line-height: 64px;
+  /* height: 50px;
+  line-height: 48px; */
   border-radius: 100px;
-  padding: 0 30px;
+  padding: 0px 37px;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
@@ -2608,6 +2610,15 @@ div.tp-theme-toggle-single .themepure-theme-toggle-input {
   margin-left: 15px;
   transform: translateY(-2px);
   display: inline-block;
+}
+.tp-btn-border-sm:hover span svg {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease-in-out;
+  /* transform-origin: center; */
+
 }
 
 .tp-btn-border-sm:hover {
